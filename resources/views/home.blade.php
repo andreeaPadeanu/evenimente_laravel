@@ -38,7 +38,9 @@
 </header>
 <div class="image-section">
             <img src="{{ asset('home.jpeg') }}" id="backdrop" alt="Imagine Eveniment">            
-            <button class="see-events-button">Vezi Evenimente</button>
+            <!-- <button class="see-events-button">Vezi Evenimente</button> -->
+            <a href="{{ route('events') }}" class="see-events-button">Vezi Evenimente</a>
+
 </div>
 
 @endsection
