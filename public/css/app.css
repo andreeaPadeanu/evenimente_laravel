@@ -21,6 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 .title {
@@ -90,6 +91,8 @@ body {
 
 .hamburger-menu {
     display:none;
+    z-index: 3;
+    top: 100%;
 }
 
 .hamburger-menu button {
@@ -107,9 +110,9 @@ body {
       margin: 0;
       background-color: #3d405b;
       position: absolute;
-      top: 60px;
+      top: 45px;
       left: 0;
-      width: 15%; 
+      width: 30%; 
       height: max-content;
       display: flex;
       flex-direction: column;
@@ -154,26 +157,37 @@ body {
 
 #backdrop{
     width: 100%;
+    margin-top: -20px;
 }
 
 .image-section {
     position: relative;
     margin-top: 20px;
+    z-index: 1;
 }
 
 .image-section img {
     width: 100%;
     height: auto;
+    /* background-image: url('{{ asset('home.jpg') }}'); */
+    /* background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; */
 }
 
 .see-events-button {
     position: absolute;
-    bottom: 20px;
+    bottom: 55%;
     left: 50%;
+    width: 300px;
+    height: 50px;
+    font-size: larger;
+    font-weight: 600;
     transform: translateX(-50%);
     padding: 10px 20px;
     background-color: #f2cc8f;
     color: #3d405b;
+    box-shadow: 0 4px 8px rgba(61, 64, 91, 0.2);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -184,3 +198,73 @@ body {
     background-color: #e07a5f;
     color: #f4f1de;
 }
+
+/* CONTUL MEU */
+
+  .login {
+    width: 350px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #191919;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .login h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+  .login input[type="text"],
+.login input[type="password"] {
+  background-color: transparent;
+  display: block;
+  border: 0;
+  border-radius: 24px;
+  border: 2px solid #3d405b;
+  outline: none;
+  margin: 20px auto;
+  padding: 12px 10px;
+  text-align: center;
+  width: 200px;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.login input[type="text"]:focus,
+.login input[type="password"]:focus {
+  width: 260px;
+  border: 2px solid #eab69f;
+}
+
+.login input[type="submit"] {
+  background-color: transparent;
+  display: block;
+  border: 0;
+  border-radius: 24px;
+  border: 2px solid #eab69f;
+  outline: none;
+  margin: 20px auto;
+  padding: 12px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.25s;
+}
+
+.login input[type="submit"]:hover {
+  width: 200px;
+  background-color: #eab69f;
+}
+  
