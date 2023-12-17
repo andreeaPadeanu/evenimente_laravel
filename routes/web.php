@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SponsorController;
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +24,8 @@ Route::get('/', function () {
 Route::get('/profile', function () {
     return "hello";
 });
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/sponsors', [SponsorController::class, 'index'])->name('sponsors');
+Route::get('/events', [EventController::class, 'index'])->name('events');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');

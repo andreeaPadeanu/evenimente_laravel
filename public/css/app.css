@@ -1,0 +1,186 @@
+/* #f4f1de alb
+#eab69f roz deschis
+#e07a5f roz inchis
+#3d405b albastru
+#f2cc8f galben */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1de;
+    color: #3d405b;
+}
+
+.header {
+    background-color: #3d405b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: #f4f1de;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+.bar {
+    width: 30px;
+    height: 4px;
+    border-radius: 4px;
+    margin-bottom: 7px;
+    background-color: #e07a5f;
+    display: inline-block;
+}
+
+.top-right-menu {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+    font-size: medium;
+}
+  
+.top-right-menu a {
+    text-decoration: none;
+    color: #eab69f;
+}
+.top-right-menu a:hover{
+    color:#e07a5f;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+}
+
+.menu-list li {
+    margin-right: 15px;
+}
+
+.menu-list a {
+    text-decoration: none;
+    color: #eab69f;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-list a:hover {
+    color: #e07a5f;
+}
+
+.hamburger-menu {
+    display:none;
+}
+
+.hamburger-menu button {
+      background-color: #3d405b; 
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      font-family: "Arial", sans-serif;
+    }
+    
+.hamburger-menu ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #3d405b;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 15%; 
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+    }
+.hamburger-menu li {
+      border-bottom: 1px solid #464a68;
+    }
+.hamburger-menu li:hover {
+      background: #464a68;
+    }
+.hamburger-menu li a{
+      padding: 15px;
+      text-align: center;
+      color: #eab69f;
+      cursor: pointer;
+      font-family: "Arial", sans-serif;
+      text-decoration: none; 
+      margin-bottom: 10px;
+      display: block;
+      
+    }
+.hamburger-menu li a:hover {
+      color: #e07a5f; 
+    }
+.user-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+.user-menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #eab69f;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.user-menu a:hover {
+    color: #e07a5f;
+}
+
+#backdrop{
+    width: 100%;
+}
+
+.image-section {
+    position: relative;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+}
+
+.see-events-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #f2cc8f;
+    color: #3d405b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.see-events-button:hover {
+    background-color: #e07a5f;
+    color: #f4f1de;
+}
