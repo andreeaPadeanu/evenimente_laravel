@@ -13,7 +13,7 @@
         <ul id="hamburger-menu">
             <li><a href="{{ route('sponsors') }}">Sponsori și Parteneri</a></li>
             <li><a href="{{ route('events') }}">Evenimente</a></li>
-            <li><a href="{{ route('contact') }}">Contact</a></li>
+            <li><a href="{{ route('contact.index') }}">Contact</a></li>
         </ul>
     </div>
 

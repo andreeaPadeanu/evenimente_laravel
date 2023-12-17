@@ -13,6 +13,7 @@
 
     <div class="container">
         @yield('content')
+        @yield('contact')
     </div>
 
     <footer>

@@ -33,3 +33,10 @@ Route::get('/contul_meu', 'App\Http\Controllers\ContulMeuController@index')->nam
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/evenimente', [EventController::class, 'index'])->name('events');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
+Route::post('/contact', [ContactController::class, 'sendMessage'])->name('contact.sendMessage');
+
+
+
+
+
