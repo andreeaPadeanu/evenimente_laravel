@@ -11,4 +11,10 @@ class EventController extends Controller
     $events = Event::all();
     return view('events', compact('events'));
     }
+
+    public function show(Event $event)
+    {
+        return view('show', compact('event'));
+}
+
 }

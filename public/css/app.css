@@ -378,3 +378,50 @@ body {
 .footer p {
     margin: 0;
 }
+
+/* SPONSORI SI PARTENERI */
+.container-sponsori {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #e07a5f;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.mySlides {
+    display: none;
+    position: absolute;
+    width: 100%;
+}
+
+.img-sponsori {
+    width: 100%;
+    height: auto;
+}
+
+.text-sponsori {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: rgba(100, 98, 98, 0.8);
+    width: 100%;
+    padding: 10px;
+}
+
+.text-sponsori h3 {
+    color: #f4f1de;
+    margin-bottom: 5px;
+}
+
+.text-sponsori p {
+    color: #f4f1de;
+    margin: 0;
+}
