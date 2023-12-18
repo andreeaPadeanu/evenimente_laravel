@@ -2,14 +2,14 @@
 
 @section('content')
 
-<div class="container">
+<div class="container-parteneri">
     <h2>Le mulțumim partenerilor noștri pentru colaborare!</h2>
 
     <div class="slideshow-container">
         @foreach($partners as $key => $partner)
             <div class="mySlides">
-                <img src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
-                <div class="text">
+                <img class="img-parteneri"src="{{ $partner->image_url }}" alt="{{ $partner->name }}">
+                <div class="text-parteneri">
                     <h3>{{ $partner->name }}</h3>
                     <p>{{ $partner->description }}</p>
                 </div>

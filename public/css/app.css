@@ -272,22 +272,82 @@ body {
   
 /* EVENIMENTE */
 
-.event {
+.container-events {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.eveniment-container-events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.eveniment-events {
+    width: calc(30% - 10px); 
+    border: 1px solid #e07a5f;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.img-events {
+    max-width: 100%;
+    height: auto;
+}
+
+.eveniment-events a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #3d405b;
+}
+
+.container-show {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-show {
+    text-align: center;
+}
+
+.eveniment-container-show {
+    border: 1px solid #3d405b;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.img-show {
+    max-width: 100%;
+    height: auto;
+}
+
+.buton-events {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #e07a5f;
+    color: #3d405b;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 25px;
+}
+
+.buton-events:hover {
     background-color: #eab69f;
-    padding: 15px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.event h3 {
     color: #3d405b;
 }
-
-.event p {
-    color: #3d405b;
-}
-
 /* CONTACT */
 .contact-container {
     background-color: #3d405b;
@@ -385,9 +445,15 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+.container-parteneri {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;   
+}
 
 h2 {
     color: #e07a5f;
+    text-align: center;
 }
 
 .slideshow-container {
@@ -409,7 +475,7 @@ h2 {
 
 .text-sponsori {
     position: absolute;
-    top: 40px;
+    top: 160px;
     left: 0;
     background-color: rgba(100, 98, 98, 0.8);
     width: 100%;
@@ -422,6 +488,29 @@ h2 {
 }
 
 .text-sponsori p {
+    color: #f4f1de;
+    margin: 0;
+}
+.img-parteneri {
+    width: 100%;
+    height: auto;
+}
+
+.text-parteneri {
+    position: absolute;
+    top: 160px;
+    left: 0;
+    background-color: rgba(100, 98, 98, 0.8);
+    width: 100%;
+    padding: 10px;
+}
+
+.text-parteneri h3 {
+    color: #f4f1de;
+    margin-bottom: 5px;
+}
+
+.text-parteneri p {
     color: #f4f1de;
     margin: 0;
 }
