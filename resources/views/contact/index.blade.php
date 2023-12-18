@@ -11,7 +11,8 @@
         </div>
     <div class="hamburger-menu">
         <ul id="hamburger-menu">
-            <li><a href="{{ route('sponsors') }}">Sponsori și Parteneri</a></li>
+            <li><a href="{{ route('sponsors') }}">Sponsori</a></li>
+            <li><a href="{{ route('parteneri') }}">Parteneri</a></li>
             <li><a href="{{ route('events') }}">Evenimente</a></li>
             <li><a href="{{ route('contact.index') }}">Contact</a></li>
         </ul>
@@ -20,7 +21,7 @@
     <div class="top-right-menu" >
         <a href="{{ route('home') }}">Acasă</a>
         <a href="{{ route('contul_meu') }}">Contul meu</a>
-        <a href="#">Coș</a>
+        <!-- <a href="#">Coș</a> -->
         
     </div>
 
@@ -78,10 +79,17 @@
         </form>
     </div>
 
-<!-- ne gasesti si pe facebook insta tik tok etc -->
+<div class="contact-info">
+    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+    
+
+</div>
 
 <div class="footer">
-    <p>&copy; 2023 Eventica. Toate drepturile rezervate</p>
+    <p>eventica@email.com</p>
+    <p>Str. Teodor Mihali 56-60, Cluj-Napoca, Romania
 </div>
 
 

@@ -357,6 +357,13 @@ body {
     background-color: #e07a5f;
     color: #3d405b;
 }
+.adresa{
+    
+    bottom: 30px;
+    text-align: center;
+    padding: 10px 0;
+    clear: both;
+}
 .footer {
     position: fixed;
     bottom: 0;

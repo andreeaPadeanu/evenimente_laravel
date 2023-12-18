@@ -11,7 +11,8 @@
         </div>
     <div class="hamburger-menu">
         <ul id="hamburger-menu">
-            <li><a href="{{ route('sponsors') }}">Sponsori și Parteneri</a></li>
+            <li><a href="{{ route('sponsors') }}">Sponsori</a></li>
+            <li><a href="{{ route('parteneri') }}">Parteneri</a></li>
             <li><a href="{{ route('events') }}">Evenimente</a></li>
             <li><a href="{{ route('contact.index') }}">Contact</a></li>
         </ul>
@@ -20,7 +21,7 @@
     <div class="top-right-menu">
         <a href="{{ route('home') }}">Acasă</a>
         <a href="{{ route('contul_meu') }}">Contul meu</a>
-        <a href="#">Coș</a>
+        <!-- <a href="#">Coș</a> -->
         
     </div>
 

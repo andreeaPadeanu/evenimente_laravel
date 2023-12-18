@@ -27,6 +27,7 @@ Route::get('/profile', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/sponsors', [SponsorController::class, 'index'])->name('sponsors');
+Route::get('/parteneri', [ParteneriController::class, 'index'])->name('parteneri');
 Route::get('/events', [EventController::class, 'index'])->name('events');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::get('/contul_meu', 'App\Http\Controllers\ContulMeuController@index')->name('contul_meu');
